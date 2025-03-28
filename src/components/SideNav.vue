@@ -30,9 +30,9 @@ const toggleMenu = () => {
             <!-- Top section: Icons -->
             <div class="mt-28 flex justify-center items-center flex-col gap-6 text-white/35">
 
-                <router-link to="/" class="flex flex-col items-center space-y-1 text-red-500 hover125">
-                    <HomeOutline :size="28" />
-                    <div class="w-full h-0.5 bg-red-500"></div>
+                <router-link to="/" class="flex flex-col items-center space-y-1 text-blue-500 hover125  ">
+                    <HomeOutline :size="28"/>
+                    <div class="w-full h-0.5 bg-blue-500 "></div>
                 </router-link>
 
                 <router-link to="/about" class="hover125">

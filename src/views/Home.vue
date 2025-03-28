@@ -5,7 +5,7 @@ import VideoCarousel from "../components/VideoCarousel.vue";
 import TopNav from "@/components/TopNav.vue";
 import Footer from "@/components/Footer.vue";
 
-import { onMounted } from "vue";
+import { ref, onMounted } from "vue";
 import movies from "../data/movies.json";
 import { useMovieStore } from "../stores/movie";
 import { storeToRefs } from "pinia";
@@ -13,11 +13,15 @@ import { storeToRefs } from "pinia";
 const useMovie = useMovieStore();
 const { movie, showFullVideo } = storeToRefs(useMovie);
 
+const isMobile = ref(false)
+
 onMounted(() => {
     console.log("Movies JSON:", movies[0][0]); // Check what you're assigning
     setTimeout(() => {
+        isMobile.value = window.innerWidth <= 450
         movie.value = movies[0][0];
-        console.log("Current movie:", movie.value);
+        console.log("isMobile:", isMobile.value)
+        console.log("Movie name:", movie.value.name);
     }, 100);
 });
 
@@ -40,15 +44,17 @@ onMounted(() => {
                 <div class="absolute z-10 h-full w-full bg-gradient-to-b from-black/65 via-black/0 to-black/0" />
 
 
-                <div class="pointer-events-none md:pointer-events-auto">
+                <div class=" md:pointer-events-auto">
                     <MovieDetails v-if="movie" :movie="movie" class="absolute z-50 left-12 px-4 w-[70%] fade-in-left" />
                 </div>
 
+                <!-- Desktop: autoplay video -->
+                <video v-if="movie && !isMobile" :src="'/videos/' + encodeURIComponent(movie.name) + '.mp4'" autoplay
+                    loop muted playsinline class="absolute z-0 top-0 right-0 h-full w-full object-cover fade-in" />
 
-
-                <video v-if="movie" :src="'/videos/' + movie.name + '.mp4'" autoplay loop muted
-                    class="absolute z-0 top-0 right-0 h-full w-full object-cover fade-in" />
-
+                <!-- Mobile: paused video OR image fallback -->
+                <video v-else-if="movie && isMobile" :src="'/videos/' + encodeURIComponent(movie.name) + '.mp4'" muted
+                    playsinline controls class="absolute z-0 top-0 right-0 h-full w-full object-cover fade-in" />
 
             </div>
 

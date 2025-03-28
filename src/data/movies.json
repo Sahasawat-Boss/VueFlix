@@ -11,6 +11,16 @@
             }
         },
         { 
+            "name": "Kimo-No Way!",
+            "description": "Who knew tea time could get this dramatic? She reached for the teapot, I reached for her hand—suddenly it's a whole anime episode.",
+            "year": "2025",
+            "genre": {
+                "one": "Comedy",
+                "two": "Life",
+                "three": "Mystery"
+            }
+        },
+        { 
             "name": "Top Gun Maverick",
             "description": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.",
             "year": "2022",
