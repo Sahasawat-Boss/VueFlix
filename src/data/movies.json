@@ -11,6 +11,26 @@
             }
         },
         { 
+            "name": "Top Gun Maverick",
+            "description": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.",
+            "year": "2022",
+            "genre": {
+                "one": "Action",
+                "two": "Thriller",
+                "three": "Drama"
+            }
+        },
+        { 
+            "name": "The Menu",
+            "description": "A young couple travels to a remote island to eat at an exclusive restaurant where the chef has prepared a lavish menu, with some shocking surprises.",
+            "year": "2022",
+            "genre": {
+                "one": "Horror",
+                "two": "Thriller",
+                "three": "Mystery"
+            }
+        },
+        { 
             "name": "Bullet Train",
             "description": "Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.",
             "year": "2022",
@@ -30,16 +50,7 @@
                 "three": "Mystery"
             }
         },
-        { 
-            "name": "Avatar The Way of Water",
-            "description": "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.",
-            "year": "2022",
-            "genre": {
-                "one": "Action",
-                "two": "Adventure",
-                "three": "Fantasy"
-            }
-        },
+
         { 
             "name": "Emily the Criminal",
             "description": "Down on her luck and saddled with debt, Emily gets involved in a credit card scam that pulls her into the criminal underworld of Los Angeles, ultimately leading to deadly consequences.",
@@ -81,13 +92,13 @@
             }
         },
         { 
-            "name": "The Menu",
-            "description": "A young couple travels to a remote island to eat at an exclusive restaurant where the chef has prepared a lavish menu, with some shocking surprises.",
+            "name": "Avatar The Way of Water",
+            "description": "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.",
             "year": "2022",
             "genre": {
-                "one": "Horror",
-                "two": "Thriller",
-                "three": "Mystery"
+                "one": "Action",
+                "two": "Adventure",
+                "three": "Fantasy"
             }
         },
         { 
@@ -98,16 +109,6 @@
                 "one": "Drama",
                 "two": "Thriller",
                 "three": "Life"
-            }
-        },
-        { 
-            "name": "Top Gun Maverick",
-            "description": "After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.",
-            "year": "2022",
-            "genre": {
-                "one": "Action",
-                "two": "Thriller",
-                "three": "Drama"
             }
         },
         { 

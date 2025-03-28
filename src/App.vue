@@ -33,10 +33,10 @@ onMounted(() => {
     <!-- Main content (when not in full screen) -->
     <div v-if="!showFullVideo">
       <!-- Top Section: Movie preview video -->
-      <div class="relative w-full h-[40vh] bg-black overflow-hidden">
-        <div class="absolute z-10 h-full w-full bg-gradient-to-r from-black via-black" />
+      <div class="relative w-full h-[50vh] bg-black overflow-hidden">
+        <div class="absolute z-10 h-full w-full bg-gradient-to-r from-black via-black/25" />
 
-        <MovieDetails v-if="movie" :movie="movie" class="absolute z-50 left-[130px] top-0 px-4 pt-20 w-[80%] fade-in" />
+        <MovieDetails v-if="movie" :movie="movie" class="absolute z-50 left-18 top-0 px-4 pt-20 w-[80%] fade-in" />
 
 
         <video v-if="movie" :src="'/videos/' + movie.name + '.mp4'" autoplay loop muted
@@ -44,7 +44,7 @@ onMounted(() => {
       </div>
 
       <!-- Bottom Section: Carousels -->
-      <div class="relative w-full h-[60vh] overflow-y-auto px-4 md:px-6 fade-in-up">
+      <div class="relative w-full h-[60vh] overflow-y-auto px-6 md:px-16 fade-in-up">
         <VideoCarousel class="pb-14 pt-14" category="Popular Movies" :movies="movies[0]" />
         <VideoCarousel class="pb-14" category="Horror Movies" :movies="movies[1]" />
         <VideoCarousel class="pb-32" category="Featured Movies" :movies="movies[2]" />

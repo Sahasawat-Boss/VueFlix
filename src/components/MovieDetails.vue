@@ -1,5 +1,5 @@
 <template>
-    <div v-if="movie" class="text-white pt-16 md:px-8 w-full z-0">
+    <div v-if="movie" class="text-white pt-10 w-fit z-0 ">
         <!-- Movie Title -->
         <div class="text-xl md:text-3xl font-semibold font-serif">
             {{ movie.name }}
@@ -29,8 +29,8 @@
 
         <!-- Preview Button -->
         <button @click="showFullVideo = true"
-            class="hover110 mt-4 bg-blue-600/80 hover:bg-blue-700 text-white font-medium text-sm px-6 py-2 rounded-lg shadow-md transition duration-300 ease-in-out">
-            {{ movie.name }} Preview &raquo;
+            class="hover110 mt-4 bg-blue-600/80 hover:bg-blue-500 text-white font-medium text-sm px-6 py-1.5 rounded-full shadow-md transition duration-300 ease-in-out">
+            Preview &raquo;
         </button>
     </div>
 </template>
