@@ -1,7 +1,7 @@
 <template>
     <!-- Mobile toggle button (hamburger) -->
-    <div class="md:hidden fixed top-4 left-4 z-50">
-        <button @click="toggleMenu" class="text-white text-3xl">☰</button>
+    <div class="md:hidden fixed top-6 left-6 z-50">
+        <button @click="toggleMenu" class="text-white text-3xl hover125">☰</button>
     </div>
 
     <!-- Sidebar -->
@@ -12,24 +12,24 @@
         ]">
         <div class="flex flex-col justify-between h-full">
             <!-- Top section: Icons -->
-            <div class="mt-12">
-                <div class="py-2 mx-4 my-6 border-b-4 border-b-red-700 hover125">
-                    <HomeOutline fillColor="#FFFFFF" :size="36" />
+            <div class="mt-20 flex flex-col gap-6 text-white/35">
+                <div class="hover125 text-red-600">
+                    <HomeOutline size="40" />
                 </div>
-                <div class="py-2 mx-4 my-6 hover125">
-                    <Magnify fillColor="#bbbb" :size="36" />
+                <div class="hover125">
+                    <Magnify size="30" />
                 </div>
-                <div class="py-2 mx-4 my-6 hover125">
-                    <TrendingUp fillColor="#bbbb" :size="36" />
+                <div class="hover125">
+                    <TrendingUp size="30" />
                 </div>
-                <div class="py-2 mx-4 my-6 hover125">
-                    <Television fillColor="#bbbb" :size="36" />
+                <div class="hover125">
+                    <Television size="30" />
                 </div>
-                <div class="py-2 mx-4 my-6 hover125">
-                    <MovieOutline fillColor="#bbbb" :size="36" />
+                <div class="hover125">
+                    <MovieOutline size="30" />
                 </div>
-                <div class="py-2 mx-4 my-6 hover125">
-                    <Plus fillColor="#bbbb" :size="36" />
+                <div class="hover125">
+                    <Plus size="30" />
                 </div>
             </div>
 
