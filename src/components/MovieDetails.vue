@@ -1,5 +1,5 @@
 <template>
-    <div v-if="movie" class="text-white pt-10 md:px-10 md:pt-18 z-0">
+    <div v-if="movie" class="text-white pt-5.5 md:px-10 md:pt-18 z-0">
         <!-- Movie Title -->
         <div class="text-xl md:text-3xl font-semibold font-serif fade-in-left">
             {{ movie.name }}

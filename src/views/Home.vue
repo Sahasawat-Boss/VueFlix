@@ -33,7 +33,7 @@ onMounted(() => {
         <div v-if="!showFullVideo">
 
             <!-- Top Section: Movie preview video -->
-            <div class="relative w-full h-[45vh] xl:h-[55vh] bg-black overflow-hidden">
+            <div class="relative w-full h-[50vh] xl:h-[55vh] bg-black overflow-hidden">
 
                 <div class="absolute z-10 h-full w-full bg-gradient-to-r from-black via-black/25 to-black/0" />
                 <div class="absolute z-10 h-full w-full bg-gradient-to-t from-black/65 via-black/0 to-black/0" />
@@ -41,7 +41,7 @@ onMounted(() => {
 
 
                 <MovieDetails v-if="movie" :movie="movie"
-                    class="absolute z-50 left-14 pt-18 top-0 px-4 w-[70%] fade-in-left" />
+                    class="absolute z-50 left-12 px-4 w-[70%] fade-in-left" />
 
 
                 <video v-if="movie" :src="'/videos/' + movie.name + '.mp4'" autoplay loop muted

@@ -15,8 +15,8 @@
 /*! CSS ========================================================== */
 /* Works in most modern browsers */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 8.5px;
+  height: 8.5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -24,7 +24,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #616161; /* black */
+  background-color: #494949; /* black */
   border-radius: 3px;
 }
 
@@ -32,16 +32,11 @@
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
-
-/* Firefox specific */
-* {
-  scrollbar-width:auto;
-  scrollbar-color: #616161 transparent;
-}
-
 /* Scroll Behavior*/
 html {
   scroll-behavior: smooth;
+  background-color: #181818;
+  color: white;
 }
 
 /** Animation CSS ========================================================== */
