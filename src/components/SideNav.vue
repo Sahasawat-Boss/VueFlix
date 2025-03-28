@@ -16,12 +16,12 @@ const toggleMenu = () => {
 
 <template>
     <!-- Mobile toggle button (hamburger) -->
-    <div class="flex md:hidden fixed top-14 left-4 z-40 fade-in-left">
-        <button @click="toggleMenu" class="text-white text-2xl hover125">☰</button>
+    <div class="flex md:hidden fixed top-15 left-2 z-40 fade-in-left">
+        <button @click="toggleMenu" class="text-white bg-black rounded-lg px-2.5 py-1 text-2xl hover125">☰</button>
     </div>
 
     <!-- Sidebar -->
-    <div id="SideNav" class="fixed top-0 left-0 w-fit p-3 h-screen bg-black z-30 transition-transform duration-300"
+    <div id="SideNav" class="fixed top-0 left-0 w-fit p-3.5 h-screen bg-black z-20 transition-transform duration-300"
         :class="[
             isOpen ? 'translate-x-0' : '-translate-x-full',
             'w-[120px] md:translate-x-0 md:flex md:flex-col'

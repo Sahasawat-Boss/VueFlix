@@ -1,6 +1,6 @@
 <template>
     <footer
-        class="w-full bg-black text-white pt-4 pb-16 px-4 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
+        class="w-full bg-black text-white pt-8 pb-16 px-4 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
         <!-- Left: Links -->
         <div class="flex flex-col md:flex-row items-center gap-4">
             <a href="https://github.com/Sahasawat-Boss" target="_blank" rel="noopener noreferrer"

@@ -40,8 +40,10 @@ onMounted(() => {
                 <div class="absolute z-10 h-full w-full bg-gradient-to-b from-black/65 via-black/0 to-black/0" />
 
 
-                <MovieDetails v-if="movie" :movie="movie"
-                    class="absolute z-50 left-12 px-4 w-[70%] fade-in-left" />
+                <div class="pointer-events-none md:pointer-events-auto">
+                    <MovieDetails v-if="movie" :movie="movie" class="absolute z-50 left-12 px-4 w-[70%] fade-in-left" />
+                </div>
+
 
 
                 <video v-if="movie" :src="'/videos/' + movie.name + '.mp4'" autoplay loop muted

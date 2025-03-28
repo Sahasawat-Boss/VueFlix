@@ -1,5 +1,5 @@
 <template>
-    <nav class="flex items-center justify-between top-0 left-0 w-full z-[0] bg-black shadow-xl px-6 py-1.5 md:py-2">
+    <nav class="flex items-center justify-between top-0 left-0 w-full z-[99] bg-black shadow-xl px-6 py-1.5 md:py-2">
         <!-- Logo -->
         <router-link to="/" class="gradient-text-green text-3xl md:text-4xl font-bold hover110">
             VF
