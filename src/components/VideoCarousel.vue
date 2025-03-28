@@ -9,11 +9,7 @@
 
         <!-- Carousel Section -->
         <Carousel ref="carousel" v-model="currentSlide" :items-to-show="8" :items-to-scroll="1" :wrap-around="true"
-            :transition="500" snapAlign="start" class="bg-transparent" :breakpoints="{
-                1024: { itemsToShow: 6 },
-                768: { itemsToShow: 4 },
-                480: { itemsToShow: 2 }
-            }">
+            :transition="500" snapAlign="start" class="bg-transparent">
             <!-- Slide for each movie -->
             <Slide v-for="(slide, index) in movies" :key="slide.name"
                 class="flex flex-col items-center object-cover text-white bg-transparent">
@@ -32,7 +28,7 @@
 
             <!-- Carousel Controls -->
             <template #addons>
-                <Navigation />
+                <Navigation  class="scale-150"/>
             </template>
         </Carousel>
     </div>
