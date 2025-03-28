@@ -16,7 +16,7 @@ const toggleMenu = () => {
 
 <template>
     <!-- Mobile toggle button (hamburger) -->
-    <div class="flex md:hidden fixed top-14 left-5 z-40 fade-in-left">
+    <div class="flex md:hidden fixed top-14 left-4 z-40 fade-in-left">
         <button @click="toggleMenu" class="text-white text-2xl hover125">☰</button>
     </div>
 
@@ -29,29 +29,33 @@ const toggleMenu = () => {
         <div class="flex flex-col h-full fade-in-left">
             <!-- Top section: Icons -->
             <div class="mt-28 flex justify-center items-center flex-col gap-6 text-white/35">
-                <div class="flex flex-col items-center space-y-1 text-red-500 hover125">
-                    <HomeOutline :size="40" />
-                    <div class="w-full h-0.5 bg-red-500"></div> <!-- This is the underline -->
-                </div>
 
-                <div class="hover125">
-                    <Magnify size="30" />
-                </div>
-                <div class="hover125">
-                    <TrendingUp size="30" />
-                </div>
-                <div class="hover125">
-                    <Television size="30" />
-                </div>
-                <div class="hover125">
-                    <MovieOutline size="30" />
-                </div>
-                <div class="hover125">
-                    <Plus size="30" />
-                </div>
+                <router-link to="/" class="flex flex-col items-center space-y-1 text-red-500 hover125">
+                    <HomeOutline :size="28" />
+                    <div class="w-full h-0.5 bg-red-500"></div>
+                </router-link>
+
+                <router-link to="/about" class="hover125">
+                    <Magnify size="28" />
+                </router-link>
+
+                <router-link to="/about" class="hover125">
+                    <TrendingUp size="28" />
+                </router-link>
+
+                <router-link to="/about" class="hover125">
+                    <Television size="28" />
+                </router-link>
+
+                <router-link to="/about" class="hover125">
+                    <MovieOutline size="28" />
+                </router-link>
+
+                <router-link to="/about" class="hover125">
+                    <Plus size="28" />
+                </router-link>
+
             </div>
         </div>
-
     </div>
 </template>
-
