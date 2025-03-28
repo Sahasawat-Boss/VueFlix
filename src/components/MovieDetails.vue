@@ -1,26 +1,38 @@
 <template>
-    <div v-if="movie" class="z-40 text-white w-[53%] pt-20">
-        <div class="text-[55px] font-semibold font-serif">{{ movie.name }}</div>
-        <div class="flex items-center text-lg pt-4">
+    <div v-if="movie" class="text-white pt-16 px-4 md:px-8 w-full md:w-[53%] max-w-[900px] z-50">
+        <!-- Movie Title -->
+        <div class="text-3xl md:text-[55px] font-semibold font-serif">
+            {{ movie.name }}
+        </div>
 
+        <!-- Metadata -->
+        <div class="flex flex-wrap items-center text-base md:text-lg pt-4">
             <div class="pr-4">{{ movie.year }}</div>
-            <div class="relative">
-                <span class="absolute left-[-2px] -top-[28px] text-[40px]">.</span>
-                <span class="pl-4 pr-4">{{ movie.genre.one }}</span>
+
+            <!-- Genre Tags -->
+            <div v-if="movie.genre.one" class="relative pr-4">
+                <span class="absolute left-[-6px] -top-[18px] text-2xl">.</span>
+                <span class="pl-3">{{ movie.genre.one }}</span>
             </div>
-            <div class="relative">
-                <span class="absolute left-[-2px] -top-[28px] text-[40px]">.</span>
-                <span class="pl-4 pr-4">{{ movie.genre.two }}</span>
+
+            <div v-if="movie.genre.two" class="relative pr-4">
+                <span class="absolute left-[-6px] -top-[18px] text-2xl">.</span>
+                <span class="pl-3">{{ movie.genre.two }}</span>
             </div>
-            <div class="relative">
-                <span class="absolute left-[-2px] -top-[28px] text-[40px]">.</span>
-                <span class="pl-4 pr-4">{{ movie.genre.three }}</span>
+
+            <div v-if="movie.genre.three" class="relative pr-4">
+                <span class="absolute left-[-6px] -top-[18px] text-2xl">.</span>
+                <span class="pl-3">{{ movie.genre.three }}</span>
             </div>
         </div>
-        <div class="text-2xl pt-6">{{ movie.description }}</div>
+
+        <!-- Description -->
+        <div class="text-base md:text-2xl pt-6 leading-relaxed">
+            {{ movie.description }}
+        </div>
     </div>
 </template>
 
 <script setup>
-defineProps({ movie: Object })
+defineProps({ movie: Object });
 </script>
