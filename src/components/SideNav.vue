@@ -1,11 +1,23 @@
+<script setup>
+import { ref } from 'vue'
+
+import Magnify from 'vue-material-design-icons/Magnify.vue'
+import HomeOutline from 'vue-material-design-icons/HomeOutline.vue'
+import TrendingUp from 'vue-material-design-icons/TrendingUp.vue'
+import Television from 'vue-material-design-icons/Television.vue'
+import MovieOutline from 'vue-material-design-icons/MovieOutline.vue'
+import Plus from 'vue-material-design-icons/Plus.vue'
+
+const isOpen = ref(false)
+const toggleMenu = () => {
+    isOpen.value = !isOpen.value
+}
+</script>
+
 <template>
     <!-- Mobile toggle button (hamburger) -->
-    <div class="fixed top-1 left-3 z-50 fade-in-left">
-        <h1 class="gradient-text-green text-5xl md:text-6xl font-bold hover110">VF</h1>
-    </div>
-
     <div class="flex md:hidden fixed top-14 left-5 z-40 fade-in-left">
-        <button @click="toggleMenu" class="text-white text-3xl hover125">☰</button>
+        <button @click="toggleMenu" class="text-white text-2xl hover125">☰</button>
     </div>
 
     <!-- Sidebar -->
@@ -14,7 +26,7 @@
             isOpen ? 'translate-x-0' : '-translate-x-full',
             'w-[120px] md:translate-x-0 md:flex md:flex-col'
         ]">
-        <div class="flex flex-col h-full">
+        <div class="flex flex-col h-full fade-in-left">
             <!-- Top section: Icons -->
             <div class="mt-28 flex justify-center items-center flex-col gap-6 text-white/35">
                 <div class="flex flex-col items-center space-y-1 text-red-500 hover125">
@@ -43,18 +55,3 @@
     </div>
 </template>
 
-<script setup>
-import { ref } from 'vue'
-
-import Magnify from 'vue-material-design-icons/Magnify.vue'
-import HomeOutline from 'vue-material-design-icons/HomeOutline.vue'
-import TrendingUp from 'vue-material-design-icons/TrendingUp.vue'
-import Television from 'vue-material-design-icons/Television.vue'
-import MovieOutline from 'vue-material-design-icons/MovieOutline.vue'
-import Plus from 'vue-material-design-icons/Plus.vue'
-
-const isOpen = ref(false)
-const toggleMenu = () => {
-    isOpen.value = !isOpen.value
-}
-</script>

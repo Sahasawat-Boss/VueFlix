@@ -2,22 +2,22 @@
     <div class="min-w-[1200px] relative">
         <!-- Category Title -->
         <div class="flex justify-between mr-6">
-            <div class="flex items-center font-semibold text-white text-2xl cursor-pointer">
+            <div class="flex items-center font-semibold text-white text-2xl cursor-pointer  fade-in-left">
                 {{ category }}
             </div>
         </div>
 
         <!-- Carousel Section -->
         <Carousel ref="carousel" v-model="currentSlide" :items-to-show="8" :items-to-scroll="1" :wrap-around="true"
-            :transition="500" snapAlign="start" class="bg-transparent">
+            :transition="450" snapAlign="start" class="bg-transparent fade-in-up">
             <!-- Slide for each movie -->
             <Slide v-for="(slide, index) in movies" :key="slide.name"
                 class="flex flex-col items-center object-cover text-white bg-transparent">
-                <div @click="fullScreenVideo(index)" class="object-cover h-full hover:brightness-125 cursor-pointer"
+                <div @click="fullScreenVideo(index)" class="object-cover h-4/5 hover:brightness-125 cursor-pointer"
                     :class="[
                         currentSlide === index
-                            ? 'scale-105 border-4 border-white shadow-xl'
-                            : 'opacity-70 border-4 border-transparent',
+                            ? 'scale-105 border-2 border-blue-400 shadow-xl'
+                            : 'opacity-50',
                         'transition-all duration-300 ease-in-out'
                     ]">
                     <img style="user-select: none" class="pointer-events-none h-full w-full"

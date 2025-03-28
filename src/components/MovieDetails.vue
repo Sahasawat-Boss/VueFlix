@@ -1,36 +1,40 @@
 <template>
-    <div v-if="movie" class="text-white pt-10 w-fit z-0 ">
+    <div v-if="movie" class="text-white pt-10 md:px-10 md:pt-18 z-0">
         <!-- Movie Title -->
-        <div class="text-xl md:text-3xl font-semibold font-serif">
+        <div class="text-xl md:text-3xl font-semibold font-serif fade-in-left">
             {{ movie.name }}
         </div>
 
         <!-- Metadata -->
-        <div class="flex flex-wrap items-center text-base md:text-lg pt-4">
-            <div class="">{{ movie.year }}</div>
+        <div class="flex flex-wrap items-center text-sm md:text-base fade-in-left bg-gray-800/20 w-fit px-5 py-0.5 mt-2 rounded-full">
+            <div>{{ movie.year }}</div>
+
             <div v-if="movie.genre.one" class="relative ">
-                <span class="ml-2.5 -top-0.5 text-lg">|</span>
+                <span class="ml-2.5 -top-0.5">|</span>
                 <span class="pl-3">{{ movie.genre.one }}</span>
             </div>
             <div v-if="movie.genre.two" class="relative ">
-                <span class="ml-2.5 -top-0.5 text-lg">|</span>
+                <span class="ml-2.5 -top-0.5">|</span>
                 <span class="pl-3">{{ movie.genre.two }}</span>
             </div>
             <div v-if="movie.genre.three" class="relative ">
-                <span class="ml-2.5 -top-0.5 text-lg">|</span>
+                <span class="ml-2.5 -top-0.5">|</span>
                 <span class="pl-3">{{ movie.genre.three }}</span>
             </div>
         </div>
 
         <!-- Description -->
-        <div class="text-base md:text-2xl pt-6 leading-relaxed">
+        <div class="text-md md:text-lg pt-4 leading-relaxed fade-in-left">
             {{ movie.description }}
         </div>
 
         <!-- Preview Button -->
         <button @click="showFullVideo = true"
-            class="hover110 mt-4 bg-blue-600/80 hover:bg-blue-500 text-white font-medium text-sm px-6 py-1.5 rounded-full shadow-md transition duration-300 ease-in-out">
-            Preview &raquo;
+            class="hover110 mt-4.5 bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-900 hover:to-blue-500 text-white text-sm px-5 py-0.5 pb-1 rounded-full fade-in-left-slow">
+            <div class="flex items-center justify-center">
+                <span>Preview </span>
+                <span class="pl-1 pt-1"> <i class="pi pi-eye" /></span>
+            </div>
         </button>
     </div>
 </template>

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "primeicons/primeicons.css";
 
 .hover125{
   @apply hover:cursor-pointer hover:scale-125 transition duration-300 ease-in-out
@@ -94,22 +95,25 @@ html {
 }
 
 .fade-in {
-  animation: fadeIn 0.8s ease-out forwards;
+  animation: fadeIn 0.85s ease-out forwards;
 }
 
 .fade-in-left {
-  animation: fadeInLeft 0.8s ease-out forwards;
+  animation: fadeInLeft 0.85s ease-out forwards;
+}
+.fade-in-left {
+  animation: fadeInLeft 1.35s ease-out forwards;
 }
 
 .fade-in-right {
-  animation: fadeInRight 0.8s ease-out forwards;
+  animation: fadeInRight 0.85s ease-out forwards;
 }
 
 .fade-in-up {
-  animation: fadeInUp 0.8s ease-out forwards;
+  animation: fadeInUp 0.85s ease-out forwards;
 }
 
 .fade-in-down {
-  animation: fadeInDown 0.8s ease-out forwards;
+  animation: fadeInDown 0.85s ease-out forwards;
 }
 /** Animation CSS ========================================================== */
