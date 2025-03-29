@@ -53,8 +53,8 @@ let currentSlide = ref(0);
 const fullScreenVideo = (index) => {
     currentSlide.value = index;
     movie.value = movies.value[index];
-    setTimeout(() => (showFullVideo.value = false));
-    //setTimeout(() => (showFullVideo.value = true), 800);
+    //setTimeout(() => (showFullVideo.value = false));
+    setTimeout(() => (showFullVideo.value = true), 600);
 };
 </script>
 
