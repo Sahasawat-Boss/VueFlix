@@ -16,6 +16,9 @@
 .gradient-text-green{
   @apply text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-green-800 to-blue-400
 }
+.gradient-blue-button{
+  @apply bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-900 hover:to-blue-500
+}
 
 /*! CSS ========================================================== */
 /* Works in most modern browsers */

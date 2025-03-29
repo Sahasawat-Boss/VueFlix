@@ -1,15 +1,15 @@
 <template>
-    <div class="min-w-[1200px] relative">
+    <div class="min-w-[1125px] relative">
         <!-- Category Title -->
-        <div class="flex justify-between mr-6">
-            <div class="flex items-center font-semibold text-white text-2xl cursor-pointer fade-in-left">
+        <div class="flex justify-between mr-6 my-2.5">
+            <div class="flex items-center font-semibold text-white text-xl cursor-pointer fade-in-left">
                 {{ category }}
             </div>
         </div>
 
         <!-- Carousel Section -->
         <Carousel ref="carousel" v-model="currentSlide" :items-to-show="9" :items-to-scroll="1" :wrap-around="true"
-            :transition="450" snapAlign="start" class="bg-transparent fade-in-up">
+            :transition="500" snapAlign="start" class="bg-transparent fade-in-up">
             <!-- Slide for each movie -->
             <Slide v-for="(slide, index) in movies" :key="slide.name"
                 class="flex flex-col items-center object-cover text-white bg-transparent">
@@ -23,12 +23,12 @@
                     <img style="user-select: none" class="pointer-events-none h-full w-full"
                         :src="'/images/' + slide.name + '.png'" alt="movie poster" />
                 </div>
-                <div class="text-sm text-center pt-2">{{ slide.name }}</div>
+                <div class="text-sm text-center pt-2.5">{{ slide.name }}</div>
             </Slide>
 
             <!-- Carousel Controls -->
             <template #addons>
-                <Navigation  class="scale-150"/>
+                <Navigation  class="scale-125"/>
             </template>
         </Carousel>
     </div>
@@ -53,8 +53,8 @@ let currentSlide = ref(0);
 const fullScreenVideo = (index) => {
     currentSlide.value = index;
     movie.value = movies.value[index];
-    //setTimeout(() => (showFullVideo.value = false));
-    setTimeout(() => (showFullVideo.value = true), 600);
+    setTimeout(() => (showFullVideo.value = false));
+    //setTimeout(() => (showFullVideo.value = true), 600);
 };
 </script>
 

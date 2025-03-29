@@ -11,7 +11,7 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const showButton = ref(false)
 
 const handleScroll = () => {
-    showButton.value = window.scrollY > 200
+    showButton.value = window.scrollY > 150
 }
 
 const scrollToTop = () => {

@@ -30,7 +30,7 @@
 
         <!-- Preview Button -->
         <button @click="showFullVideo = true"
-            class="md:scale-110 hover110 mt-4.5 bg-gradient-to-r from-blue-500 to-blue-900 hover:from-blue-900 hover:to-blue-500 text-white text-sm ml-2 px-5.5 py-0.5 pb-1 rounded-full fade-in-left-slow">
+            class="md:scale-110 hover110 mt-4.5 gradient-blue-button text-white text-sm ml-2 px-5.5 py-0.5 pb-1 rounded-full fade-in-left-slow">
             <div class="flex items-center justify-center">
                 <span>Preview </span>
                 <span class="pl-1 pt-1"> <i class="pi pi-eye" /></span>
