@@ -163,21 +163,21 @@
             }
         },
         {
-            "name": "Werewolf by Night",
-            "description": "Follows a lycanthrope superhero who fights evil using the abilities given to him by a curse brought on by his bloodline.",
-            "year": "2019",
-            "genre": {
-                "one": "Action",
-                "two": "Thriller",
-                "three": "Drama"
-            }
-        },
-        {
             "name": "The Black Phone",
             "description": "After being abducted by a child killer and locked in a soundproof basement, a 13-year-old boy starts receiving calls on a disconnected phone from the killer's previous victims.",
             "year": "2022",
             "genre": {
                 "one": "Horror",
+                "two": "Thriller",
+                "three": "Drama"
+            }
+        },
+        {
+            "name": "Werewolf by Night",
+            "description": "Follows a lycanthrope superhero who fights evil using the abilities given to him by a curse brought on by his bloodline.",
+            "year": "2019",
+            "genre": {
+                "one": "Action",
                 "two": "Thriller",
                 "three": "Drama"
             }
@@ -209,16 +209,6 @@
             "genre": {
                 "one": "Crime",
                 "two": "Drama",
-                "three": "Thriller"
-            }
-        },
-        {
-            "name": "Aftersun",
-            "description": "Sophie reflects on the shared joy and private melancholy of a holiday she took with her father twenty years earlier. Memories real and imagined fill the gaps between as she tries to reconcile the father she knew with the man she didn't...",
-            "year": "2016",
-            "genre": {
-                "one": "Drama",
-                "two": "Story",
                 "three": "Thriller"
             }
         },

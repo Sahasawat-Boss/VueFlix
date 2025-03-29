@@ -84,7 +84,7 @@ const selectedCategory = ref("Popular")
         <!-- Full-screen video view -->
         <div v-else class="relative w-full h-screen bg-black z-[999]">
             <div @click="showFullVideo = false"
-                class="absolute top-30 md:top-10 left-1/2 -translate-x-1/2 z-50 px-4 py-3.5 text-white/80 bg-black/35 rounded-full cursor-pointer hover125 hover:text-blue-400 transition">
+                class="absolute top-34 md:top-10 left-1/2 -translate-x-1/2 z-50 px-4 py-3.5 text-white/80 bg-black/35 rounded-full cursor-pointer hover125 hover:text-blue-400 transition">
                 <i class="pi pi-arrow-circle-left" style="font-size: 1.6rem"></i>
             </div>
 
