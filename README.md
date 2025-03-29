@@ -1,29 +1,30 @@
-# .
+# 🎬 VueFlix
 
-This template should help get you started developing with Vue 3 in Vite.
+VueFlix is a stylish, responsive movie preview web app where users can explore categories and watch preview trailers — all inspired by a modern streaming platform interface.
 
-## Recommended IDE Setup
+🔗 **Live Demo:** [vueflix-demo.netlify.app](https://vueflix-demo.netlify.app)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 📸 Preview
 
-## Customize configuration
+![vueflix](https://github.com/user-attachments/assets/3c4b297a-87cb-484f-825b-a783182c92ba)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
 
-## Project Setup
+## 🚀 Features
 
-```sh
-npm install
-```
+- Movie preview with auto-playing background video
+- Category filtering (Popular, Horror, Featured)
+- Smooth transitions & responsive layout
+- Full-screen playback toggle
+- Scroll to top button (desktop)
+- Built-in mobile support and fallback behaviors
 
-### Compile and Hot-Reload for Development
+## 🛠️ Tech Stack
 
-```sh
-npm run dev
-```
+- **Vue 3**
+- **Vite**
+- **Tailwind CSS**
+- **Pinia**
+- **JSON as mock backend**
+- **Netlify** for deployment
 
-### Compile and Minify for Production
 
-```sh
-npm run build
-```
