@@ -26,7 +26,7 @@ const filteredMovies = computed(() => {
     return index !== -1 ? movies[index] : []
 })
 
-const categories = ["Popular", "Horror", "Featured"]
+const categories = ["Popular", "Horror", "Featured"] 
 const selectedCategory = ref("Popular")
 
 
@@ -58,11 +58,11 @@ const selectedCategory = ref("Popular")
             </div>
 
             <!-- Category Filter Buttons -->
-            <div class="w-full flex flex-wrap gap-1.5 px-6 md:px-16 pt-2 pb-1 fade-in-left">
+            <div class="w-full flex flex-wrap gap-2.5 px-6 md:px-16 pt-2 pb-1 fade-in-left">
                 <button v-for="cat in categories" :key="cat" @click="selectedCategory = cat" :class="[
-                    'px-2.5 py-1 rounded-full text-xs hover110',
+                    'px-2.5 py-1 rounded-full text-xs hover:cursor-pointer',
                     selectedCategory === cat
-                        ? 'gradient-blue-button text-white'
+                        ? 'gradient-blue-button opacity-85 text-white'
                         : 'bg-white/10 text-white/50 hover:bg-white/35 hover:text-white/70'
                 ]">
                     {{ cat }}
