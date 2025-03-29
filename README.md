@@ -6,7 +6,8 @@ VueFlix is a stylish, responsive movie preview web app where users can explore c
 
 ## 📸 Preview
 
-![VueFlix Preview](public/images/preview.jpg) <!-- Optional image -->
+![vueflix](https://github.com/user-attachments/assets/3c4b297a-87cb-484f-825b-a783182c92ba)
+
 
 ## 🚀 Features
 
