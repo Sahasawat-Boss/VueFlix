@@ -25,7 +25,7 @@
                 <!-- External Link Button with blue-to-indigo gradient -->
                 <a href="https://bossbsynth.com/" target="_blank" rel="noopener noreferrer"
                     class="bg-gradient-to-r from-blue-700 to-indigo-500 hover:from-blue-400 hover110 px-6 py-2 rounded-full text-white transition fade-in-right">
-                    Visit BossBSynth.com ↗
+                    Visit bossbsynth.com ↗
                 </a>
             </div>
         </div>

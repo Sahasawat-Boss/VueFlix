@@ -64,9 +64,10 @@ onMounted(() => {
         <!-- Full-screen video view -->
         <div v-else class="relative w-full h-screen bg-black z-[999]">
             <div @click="showFullVideo = false"
-                class="absolute z-50 p-6 mt-32 text-xl text-white/80 bg-opacity-50 rounded-full cursor-pointer hover125 hover:text-blue-400">
+                class="absolute top-10 left-1/2 -translate-x-1/2 z-50 p-4 text-2xl text-white/80 bg-black/40 rounded-full cursor-pointer hover125 hover:text-blue-400 transition">
                 <i class="pi pi-arrow-circle-left"></i>
             </div>
+
             <video :src="'/videos/' + movie.name + '.mp4'" autoplay loop controls
                 class="absolute z-40 w-full h-screen bg-black" />
         </div>

@@ -4,10 +4,10 @@
         <!-- Left: Links -->
         <div class="flex flex-col md:flex-row items-center gap-4">
             <a href="https://github.com/Sahasawat-Boss" target="_blank" rel="noopener noreferrer"
-                class="hover110 gradient-text-green font-semibold tracking-wider">
+                class="hover110 gradient-text-green tracking-wider">
                 GitHub
             </a>
-            <a href="https://bossbsynth.com/" target="_blank" rel="noopener noreferrer" class="hover110 gradient-text-green font-semibold tracking-wider">
+            <a href="https://bossbsynth.com/" target="_blank" rel="noopener noreferrer" class="hover110 gradient-text-green tracking-wider">
                 bossbsynth.com
             </a>
         </div>

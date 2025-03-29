@@ -11,7 +11,7 @@
 
             <div v-if="movie.genre.one" class="relative ">
                 <span class="ml-2.5 -top-0.5">|</span>
-                <span class="pl-3 ">{{ movie.genre.one }}</span>
+                <span class="pl-3 text-blue-300">{{ movie.genre.one }}</span>
             </div>
             <div v-if="movie.genre.two" class="relative ">
                 <span class="ml-2.5 -top-0.5">|</span>
@@ -24,7 +24,7 @@
         </div>
 
         <!-- Description -->
-        <div class="text-sm md:text-base lg:text-lg pt-4 leading-relaxed fade-in-left">
+        <div class="text-sm md:text-base lg:text-lg pt-4 leading-relaxed fade-in-left tracking-wide">
             {{ movie.description }}
         </div>
 
