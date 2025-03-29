@@ -10,8 +10,9 @@
         <div class="flex items-center">
             <a href="https://bossbsynth.com/" target="_blank" rel="noopener noreferrer"
                 class="gradient-text-green text-xs font-semibold hover110 fade-in-right">
+                <span class="text-blue-400/85"><i class="pi pi-spin pi-globe" style="font-size: 0.7rem"></i></span>
+
                 bossbsynth.com
-                <span class="text-blue-400/85"><i class="pi pi-spin pi-globe" style="font-size: 0.6rem"></i></span>
             </a>
         </div>
 
