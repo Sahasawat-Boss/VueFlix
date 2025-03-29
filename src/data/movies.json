@@ -213,36 +213,6 @@
             }
         },
         {
-            "name": "Decision to Leave",
-            "description": "A detective investigating a man's death in the mountains meets the dead man's mysterious wife in the course of his dogged sleuthing.",
-            "year": "2021",
-            "genre": {
-                "one": "Crime",
-                "two": "Drama",
-                "three": "Mystery"
-            }
-        },
-        {
-            "name": "The Batman",
-            "description": "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
-            "year": "2024",
-            "genre": {
-                "one": "Action",
-                "two": "Crime",
-                "three": "Drama"
-            }
-        },
-        {
-            "name": "The Girl on a Bulldozer",
-            "description": "She lives with her father and a sibling. One day, her father has a mysterious accident, forces her to look after her younger sibling, the restaurant, and an investigator to find the truth about the accident.",
-            "year": "2022",
-            "genre": {
-                "one": "Drama",
-                "two": "Mystery",
-                "three": "Drama"
-            }
-        },
-        {
             "name": "Bullet Train",
             "description": "Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.",
             "year": "2024",
