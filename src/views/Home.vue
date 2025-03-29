@@ -60,7 +60,7 @@ const selectedCategory = ref("Popular")
             <!-- Category Filter Buttons -->
             <div class="w-full flex flex-wrap gap-1.5 px-6 md:px-16 pt-2 pb-1 fade-in-left">
                 <button v-for="cat in categories" :key="cat" @click="selectedCategory = cat" :class="[
-                    'px-2.5 py-1 rounded-full text-xs transition hover110',
+                    'px-2.5 py-1 rounded-full text-xs hover110',
                     selectedCategory === cat
                         ? 'gradient-blue-button text-white'
                         : 'bg-white/10 text-white/50 hover:bg-white/35 hover:text-white/70'
